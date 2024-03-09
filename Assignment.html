@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Map -->
+    <!-- <script>
+
+        let x = [2,4,8,10];
+        let result = x.map(multi);
+
+        function multi(value){
+            return value*3;
+        }
+
+        console.log(result);
+
+        
+    </script> -->
+
+    <!-- <script>
+        let name = ['cat','dog','rabbit'];
+        let result = name.map(findLenght);
+
+        function findLenght(count){
+            return count.length;
+        }
+
+        console.log(result);
+    </script> -->
+
+
+    <!-- <script>
+        let temp = [20,30,15,25];
+
+        let result = temp.map(findTemp);
+
+        
+        function findTemp(count){
+            let f=0;
+            return f = count*9/5+32;
+        }
+
+        console.log(result);
+
+        
+    </script> -->
+
+
+    <!-- <script>
+        let bool = [true,false,true,false];
+
+        let result = bool.map(toStringValue);
+
+        function toStringValue(count){
+            let r;
+            return r=count.toString();
+        }
+
+        console.log(result);
+    </script> -->
+    <!-- 
+   <script>
+     let people = [{
+        name:"shubham",
+        age : 26
+    },
+    {
+        name:"rahul",
+        age :28
+    },
+    {
+        name:"rahil",
+        age:21
+    }];
+
+    let result = people.map(extractAge);
+
+    function extractAge(count){
+        return count.age;
+    }
+
+    
+
+    console.log(result);
+   </script> -->
+
+
+    <!-- Filter -->
+
+    <!-- <script>
+   
+   let x = [12,5,8,3,10];
+
+   let result = x.filter(checkGreater);
+
+   function checkGreater(count){
+    return count>3;
+   }
+
+   console.log(result);
+   </script> -->
+
+
+    <!-- <script>
+    let fruits = ['apple','banana','grape','kivi'];
+
+    let result = fruits.filter(checkLength);
+
+    function checkLength(count){
+
+        if(count.length>4){
+            return count;
+        }
+    }
+
+    console.log(result);
+
+  </script>
+-->
+
+
+    <!-- <script>
+
+        let age = [18,25,12,35,40];
+
+        let result = age.filter(checkAge);
+
+        function checkAge(count){
+            return count>=18;
+        }
+
+        console.log(result);
+    </script> -->
+
+    <!-- <script>
+        let x = [null,5,null,8,null];
+
+        let result = x.map(extractNull);
+
+        function extractNull(count){
+
+            if(count!=null){
+                return count
+            }
+            
+        }
+
+        console.log(result);
+    </script> -->
+
+    <!-- <script>
+        let x = ['hello','world','how','are','you'];
+
+        let result = x.filter(checkOut);
+
+        function checkOut(count){
+            if(count.contains('o')){
+                return count;
+            }
+        }
+
+        console.log(result);
+    </script> -->
+
+    <!-- Some -->
+
+    <!-- <script>
+        let x = [15,20,25,30,35];
+
+        let result = x.some(checkDivisibilty);
+
+        function checkDivisibilty(count){
+            return count%7==0;
+        }
+
+        console.log(result);
+    </script> -->
+
+    <!-- <script>
+        let x = [85,72,98,64,91];
+
+        let result = x.some(checkScore);
+
+        function checkScore(count){
+            return count >90;
+        }
+
+        console.log(result);
+    </script> -->
+
+
+    <!-- <script>
+
+        let fruit = ["apple","banana","cherry","date"];
+
+        let result = fruit.some(checkLength);
+
+        function checkLength(count){
+            if(count.length>6){
+                return count;
+            }
+        }
+
+        console.log(result);
+    </script> -->
+
+    <!-- <script>
+        let x = [null,undefined,0,false];
+
+        let result = x.some(checkValue);
+
+        function checkValue(count){
+            if(count == true){
+                return count;
+            }
+        }
+
+        console.log(result);
+    </script> -->
+
+
+    <!-- <script>
+        let x = [10,20,30,40,50];
+
+        let result = x.some(checkOdd);
+
+        function checkOdd(count){
+            return count%3==0;
+        }
+
+        console.log(result);
+    </script> -->
+
+    <!-- Every -->
+    <!-- <script>
+        let x = [80,75,85,90];
+
+        let result = x.every(checkPass);
+
+        function checkPass(count){
+            if(count>40){
+                return count;
+            }
+        }
+
+        console.log(result);
+    </script> -->
+
+    <!-- <script>
+        let x = ['apple','banana','cherry','date'];
+
+        let result = x.every(checkLength);
+
+        function checkLength(count){
+            if(count.length>=4){
+                return count;
+            }
+        }
+
+        console.log(result);
+    </script> -->
+
+
+    <!-- <script>
+        let x = [true,true,false,true];
+
+        let result = x.every(checkValues);
+
+        function checkValues(count){
+            if(count==true){
+                return count;
+            }
+
+        }
+
+        console.log(result);
+    </script> -->
+
+
+    <!-- <script>
+        let x = [2,4,6,8,10];
+
+        let result = x.every(checkEven);
+
+        function checkEven(count){
+            if(count % 2==0){
+                return count;
+            }
+        }
+
+        console.log(result);
+    </script> -->
+
+    <!-- Slice -->
+
+    <!-- <script>
+        let x = [10,20,30,40,50];
+
+        let result = x.slice(0,3);
+
+        console.log(result);
+    </script> -->
+
+
+    <!-- <script>
+        let x = ['apple','banana','cherry','date'];
+
+        let result = x.slice(2,5);
+
+        console.log(result);
+    </script> -->
+
+    <!-- Push -->
+    <!-- <script>
+        let x = ['apple','banana','cherry'];
+
+        x.push('orange');
+
+        console.log(x);
+    </script>
+     -->
+
+
+    <!-- <script>
+        let x = ['apple', 'banana', 'cherry'];
+
+        x.push('graphs','kiwi');
+        console.log(x);
+    </script> -->
+
+    <!-- Pop -->
+
+    <!-- <script>
+        let x = ['apple', 'banana', 'cherry'];
+
+        x.pop();
+
+        console.log(x);
+
+
+        let y = ['apple', 'banana', 'cherry'];
+
+        x.pop();
+
+        x.pop();
+
+        console.log(x);
+
+
+    </script> -->
+
+    <!-- Shift -->
+
+    <!-- <script>
+        
+        let x = ['apple', 'banana', 'cherry'];
+
+        x.shift();
+
+        console.log(x);
+    </script> -->
+
+
+    <!-- <script>
+        let x = ['apple', 'banana', 'cherry'];
+
+        x.shift();
+        x.shift();
+
+        console.log(x);
+    </script> -->
+
+
+    <!-- Unshift -->
+    <!-- 
+    <script>
+        let x = ['apple', 'banana', 'cherry'];
+
+        x.unshift('mango');
+
+        console.log(x);
+    </script> -->
+
+
+    <!-- Concat -->
+
+    <!-- <script>
+        let x = [1,2];
+        let y = [3,4];
+
+        let result = x.concat(y);
+        console.log(result);
+    </script> -->
+
+
+    <!-- <script>
+        let x = ['apple','banana'];
+        let y = ['cherry','date'];
+
+        let result = x.concat(y);
+
+        console.log(result);
+    </script> -->
+
+
+    <!-- Join -->
+
+    <!-- <script>
+        let x = ['apple','banana','cherry'];
+
+        let result = x.join("-");
+
+        console.log(result);
+    </script> -->
+
+
+    <script>
+        let x = [10,20,30,40];
+
+        let result = x.join(",");
+
+        console.log(result);
+    </script>
+
+</body>
+
+</html>
